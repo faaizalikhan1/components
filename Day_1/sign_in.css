@@ -1,0 +1,125 @@
+html,body{
+    margin:0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    background: #143746;
+    color: #1C1B1B;
+}
+
+a{
+    text-decoration: underline;
+    color: #E8E7E7;
+}
+
+.sign_up{
+    font-size: 0.8em;
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: 10em;
+    left:0;
+}
+
+.log-in{
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    width:60%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+span{
+    margin-top: 5em;
+}
+
+input{
+    background: none;
+    border:none;
+    font-size: 1em;
+    height: 3em;
+    width: 90%;
+    outline: 0;
+    border-radius: 0.5em;
+    background: #132F3B;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+label{
+    display: block;
+    font-size: 1.3em;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.first{
+    margin-top: 4em;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 1em;
+    color:rgb(26, 25, 25);
+}
+
+button{
+    position: absolute;
+    right: 2em;
+    bottom: 8em;
+    width: 40%;
+    height: 10%;
+    border-radius: 1em;
+}
+
+.group{
+    position: relative;
+    width: 100%;
+}
+
+.bar{
+    position:relative;
+    display:block;
+    width: 90%;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 5em;
+    position:absolute;
+    background: #4FC1A5;
+    transition: 2s ease all;
+}
+
+.bar::before{
+    left:50%;
+}
+
+.bar::after{
+    right: 50%;
+}
+
+
+input:focus ~ .bar:before, input:focus ~ .bar::after{
+    width: 50%;
+}
+
