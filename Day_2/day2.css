@@ -1,0 +1,104 @@
+:root{
+    --font-title:'Rock Salt', sans-serif;
+    --font-normal: 'Patrick Hand', sans-serif;   
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    border: 0;
+ 
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    transition: 1s all ease;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+body{
+    background: brown;
+    font-family: var(--font-normal);
+    color: #1C1B1B;
+}
+
+header{
+    margin: 0;
+    height:15vh;
+    background: rgb(122, 198, 201);
+    box-shadow:2px cadetblue;
+}
+
+main{
+    min-height: 50vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-family: var(--font-title);
+    font-weight: bold;
+    font-size: 2em;
+    height:65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav bar */
+nav{
+    height: 35%;
+    font-size: 1.3em;
+    background: rgb(95, 154, 156);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+}
+/* nav bar end */
+
+.post{
+    position: relative;
+    margin-top: 2em;
+    border-top-right-radius: 5em;
+    width: 50%;
+    background: #497C7D;
+}
+
+img{
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.post-details{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.post-main{
+    height: 40%;
+    border-top-right-radius: 5em;
+    padding:2em 2em;
+    background: cadetblue;
+}
+
+.post-text{
+    padding:2em 2em;
+    font-size: 1.2em;
+}
