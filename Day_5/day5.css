@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+aside{
+    width: 10%;
+    background: brown;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-block{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    
+}
+
+
+.inner-blocks{
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+
+.inner-blocks.one{
+    position: relative;
+    background: lightseagreen;
+    transition: 0.3s all ease-in-out;
+}
+
+.inner-blocks.two{
+    background: azure;
+    transition: 0.3s all ease-in-out;
+}
+
+.inner-blocks.three{
+    background: lightblue;
+    transition: 0.3s all ease-in-out;
+}
+
+
+/* .inner-blocks:hover{
+    width: 140%;
+    background: aliceblue;
+    transition: 0.3s all ease-in-out;
+} */
+
+
+
+
+.tooltip-container{
+    position: relative;
+}
+
+.tooltip-container .tooltip-text{
+    transform: scale(0);
+    width: 120px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    position: absolute;
+    z-index: 1;
+    right: -135px;
+    top: 10px;
+    transition: 0.2s all ease-in-out;
+}
+
+.tooltip-container .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; 
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent grey transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-text {
+    transform-origin: left center;
+    transform: scale(1);
+    transition: 0.2s all ease-in-out;
+}
