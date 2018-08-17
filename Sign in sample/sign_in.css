@@ -14,19 +14,18 @@ html,body{
 a{
     text-decoration: underline;
     color: #E8E7E7;
+    display: block;
 }
 
 .sign_up{
     font-size: 0.8em;
-    width: 50%;
     position: absolute;
-    z-index: 2;
-    bottom: 10em;
-    left:0;
+    right: 0;
+    bottom: 75%;
 }
 
 .log-in{
-    width: 30vw;
+    width: 40vw;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -34,7 +33,7 @@ a{
 
 form{
     display: flex;
-    width:60%;
+    width:50%;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -51,7 +50,6 @@ input{
     height: 3em;
     width: 90%;
     outline: 0;
-    border-radius: 0.5em;
     background: #132F3B;
 }
 
@@ -62,7 +60,8 @@ input:focus{
 
 label{
     display: block;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin-left: 0.8em;
     font-weight: 700;
     position: absolute;
     top: 10px;
@@ -80,13 +79,18 @@ input:focus ~ label, input:valid ~ label {
     color:rgb(26, 25, 25);
 }
 
+.pos{
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+
 button{
-    position: absolute;
-    right: 2em;
-    bottom: 8em;
-    width: 40%;
-    height: 10%;
+    width: 9vw;
+    height: 7vh;
     border-radius: 1em;
+    position: absolute;
+    top: 0;
 }
 
 .group{
@@ -123,3 +127,25 @@ input:focus ~ .bar:before, input:focus ~ .bar::after{
     width: 50%;
 }
 
+@media only screen and (max-width: 600px){
+    label{
+        font-size: 1em;
+        margin-left: 0.2em;
+    }
+
+    form{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+
+    span{
+        width: 100%;
+        text-align: center;
+    }
+    .sign_up{
+         bottom: 0;
+    }
+
+}
